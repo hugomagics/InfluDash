@@ -6,7 +6,13 @@ export default defineNuxtConfig({
         viewport: 'width=500, initial-scale=1',
         title: 'WebWeMade',
         meta: [
-          { name: "WebWeMade, l'agence de création de sites webs", content: 'Création de sites webs, applications mobiles, bots' }
+          { charset: 'utf-8' },
+          { name: 'WebWeMade', content: 'width=device-width, initial-scale=1' },
+          {
+            hid: 'description',
+            name: 'description',
+            content: 'Création de sites webs, applications mobiles, bots'
+          }
         ],
         link: [{ rel: 'icon', type: 'image/x-icon', href: '/images/logoEmpty.png' }]
       }
