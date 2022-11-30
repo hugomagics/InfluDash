@@ -3,10 +3,10 @@ const runtimeConfig = useRuntimeConfig()
 let test = runtimeConfig.token;
 
 export default defineEventHandler(() => {
-    count++;
-    return {
-      title: 'Hello World',
-      count: count,
-      env: test,
-    }
+  count++;
+  return {
+    title: 'Hello World',
+    count: count,
+    env: test,
+  }
 })

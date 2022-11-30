@@ -1,16 +1,21 @@
 <template>
     <div class="header">
-        <img src="/images/logo.png" alt="WebWeMade" class="logo">
+        <NuxtLink to="/" class="logo">
+            <img src="/images/logo.png" alt="logo">
+        </NuxtLink>
+        <BurgerMenu />
     </div>
 </template>
 
 <style>
     .header {
-        background-color: #000;
-        padding: 10px;
         display: flex;
+        margin-top: 40px;
     }
     .logo {
-        width: 20vh;
+        position: fixed;
+        width: 15%;
+        right: 80%;
+        cursor: pointer;
     }
 </style>
