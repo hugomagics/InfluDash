@@ -5,6 +5,9 @@ export default defineNuxtConfig({
         charset: 'utf-16',
         viewport: 'width=500, initial-scale=1',
         title: 'WebWeMade',
+        htmlAttrs: {
+          lang: 'fr'
+        },
         meta: [
           { charset: 'utf-8' },
           { name: 'WebWeMade', content: 'width=device-width, initial-scale=1' },
