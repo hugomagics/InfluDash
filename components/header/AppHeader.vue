@@ -1,19 +1,17 @@
 <template>
-  <HomeTopDesktop class="Desktop"/>
-  <HomeTopMobile class="Mobile"/>
-
-  <HomeDownDesktop class="Desktop"/>
+    <HeaderDesktop class="desktopHeader"/>
+    <HeaderMobile class="mobileHeader"/>
 </template>
 
 <style scoped>
 @media only screen and (min-width: 768px) {
-  .Desktop {
-    display: block;
+  .desktopHeader {
+    display: flex;
   }
 }
 
 @media only screen and (max-width: 767px) {
-  .Mobile {
+  .mobileHeader {
     display: block;
   }
 }

@@ -1,5 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+
 export default defineNuxtConfig({
+    modules: [['nuxt-swiper', {
+      // Swiper options
+    }]],
     app: {
       head: {
         charset: 'utf-16',
@@ -17,14 +21,31 @@ export default defineNuxtConfig({
             content: 'Création de sites webs, applications mobiles, bots'
           }
         ],
-        link: [{ rel: 'icon', type: 'image/x-icon', href: '/images/logoEmpty.png' }]
+        link: [
+          { rel: 'icon', type: 'image/x-icon', href: '/images/logoEmpty.png' },
+          {
+            rel: "stylesheet",
+            href: "https://fonts.googleapis.com/css2?family=Fira+Code&display=swap",
+          },
+          {
+            rel: "stylesheet",
+            href: "https://fonts.googleapis.com/css2?family=Nunito&display=swap",
+          },
+          {
+            rel: "stylesheet",
+            href: "https://fonts.googleapis.com/css2?family=Montserrat&display=swap",
+          },
+        ]
       }
     },
+
     css: [
-        '@/assets/styles/reset.css',
+      '@/assets/styles/reset.css',
+      '@/assets/styles/global.css',
     ],
+  
     runtimeConfig: {
-        // The private keys which are only available server-side
+      // The private keys which are only available server-side
 
         apiSecret: '123',
         token: '',
@@ -33,5 +54,5 @@ export default defineNuxtConfig({
         public: {
           apiBase: '/api'
         }
-      }
+    },
 })
