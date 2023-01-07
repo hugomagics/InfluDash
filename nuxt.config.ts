@@ -25,6 +25,10 @@ export default defineNuxtConfig({
           { rel: 'icon', type: 'image/x-icon', href: '/images/logoEmpty.png' },
           {
             rel: "stylesheet",
+            href: "https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&display=swap",
+          },
+          {
+            rel: "stylesheet",
             href: "https://fonts.googleapis.com/css2?family=Fira+Code&display=swap",
           },
           {
@@ -34,6 +38,10 @@ export default defineNuxtConfig({
           {
             rel: "stylesheet",
             href: "https://fonts.googleapis.com/css2?family=Montserrat&display=swap",
+          },
+          {
+            rel: "stylesheet",
+            href: "https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap",
           },
         ]
       }
