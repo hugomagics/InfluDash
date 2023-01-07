@@ -128,7 +128,6 @@ ul {
 }
 
 .mobileHeader {
-    display: none;
     position: fixed;
     width: 100%;
     height: v-bind(vh);

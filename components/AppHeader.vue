@@ -1,18 +1,24 @@
 <template>
-    <DesktopHeaderMenu class="desktopHeader"/>
-    <MobileHeaderMenu class="mobileHeader"/>
+    <DesktopHeaderMenu class="desktop"/>
+    <MobileHeaderMenu class="mobile"/>
 </template>
 
-<style scoped>
+<style>
 @media only screen and (min-width: 768px) {
-  .desktopHeader {
+  .desktop {
     display: flex;
+  }
+  .mobile {
+    display: none;
   }
 }
 
 @media only screen and (max-width: 767px) {
-  .mobileHeader {
+  .mobile {
     display: block;
+  }
+  .desktop {
+    display: none;
   }
 }
 </style>

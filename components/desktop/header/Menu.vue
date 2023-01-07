@@ -64,7 +64,6 @@ watch(() => route.name, () => {
     
     align-items: center;
     box-sizing: border-box;
-    display: none;
 }
 
 .logoContainer {
