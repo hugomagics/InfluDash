@@ -1,6 +1,6 @@
 <template>
-    <HeaderDesktop class="desktopHeader"/>
-    <HeaderMobile class="mobileHeader"/>
+    <DesktopHeaderMenu class="desktopHeader"/>
+    <MobileHeaderMenu class="mobileHeader"/>
 </template>
 
 <style scoped>

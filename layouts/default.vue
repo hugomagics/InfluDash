@@ -1,5 +1,5 @@
 <template>
-    <HeaderAppHeader/>
+    <AppHeader/>
     <slot />
     <FooterAppFooter />
 </template>

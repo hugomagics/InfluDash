@@ -16,7 +16,7 @@
                     Vous êtes à la recherche d'un partenaire qui vous accompagnera sur la création d'un site vitrine ? <br/>
                     Vous avez un projet pour votre activité nécessitant du développement Web ou  Mobile ? <br/>
                 </div>
-                <HomeLeftCaroussel/>
+                <DesktopHomeLeftCaroussel/>
             </div>
     
             <div class="Container" Right>
@@ -27,7 +27,7 @@
                     Vous avez besoin pour développé votre activité un bot qui exécute des actions de manières automatisées ? <br/>
                     Vous êtes un streamer, vous détenez une communauté et vous avez besoins d'un bot performant ? <br/>
                 </div>
-                <HomeRightCaroussel/>
+                <DesktopHomeRightCaroussel/>
             </div>
         </div>
     </div>
@@ -72,7 +72,8 @@ br {
     margin-top: 50px;
 
     font-family: 'Fira Code';
-    font-style: bold;
+    font-style: normal;
+    font-weight: 700;
     font-size: 0.9vw;
 }
 

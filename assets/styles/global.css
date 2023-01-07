@@ -11,15 +11,10 @@ h2 {
   font-weight: 900;
   font-size: 1vw;
   line-height: 26px;
-
   color: #A4A6AB;
 }
 
 @media screen and (max-width: 768px) {
-  .logo {
-      width: 200px;
-      height: 30px;
-  }
   h1 {
       font-size: 7.5vw;
       line-height: 1.2em;

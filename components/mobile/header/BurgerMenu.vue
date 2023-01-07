@@ -1,18 +1,18 @@
 <template>
 
-    <div class="menu-wrapper" @click="changeState" :class="{ active: openMenu }">
-
-        <div class="menu-bar first"></div>
-        <div class="menu-bar second"></div>
-    
+    <div class="container">
+      <div class="menu-wrapper" @click="changeState" :class="{ active: openMenu }">
+  
+          <div class="menu-bar first"></div>
+          <div class="menu-bar second"></div>
+      
+      </div>
     </div>
 
 </template>
 
 <script setup>
 let openMenu = ref(false);
-
-// create emit
 const emit = defineEmits(['openMenu']);
 
 function changeState() {
@@ -24,27 +24,47 @@ function changeState() {
 
 <style scoped>
 
+.container {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 40px;
+  width: 40px;
+
+  transform-origin: center;
+}
+
 .menu-wrapper {
-    display: flex;
-    align-items: flex-end;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    cursor: pointer;
+  width: 40px;
+  height: auto;
+  cursor: pointer;
+  position: relative;
+}
+
+.menu-bar {
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background: #fff;
+  left: 0%;
 }
 
 .first {
-    width: 50px;
+    width: 40px;
     height: 3px;
-    background-color: #28ACE3;
+
     animation-delay: 0.1s;
     transition: all 0.3s;
+    background-color: #28ACE3;
 }
 
 .second {
-    width: 50px;
-    margin-top: 5px;
+    width: 40px;
     height: 3px;
+    margin-top: 6px;
+
     background-color: #28ACE3;
     transition: all 0.3s;
 }
@@ -74,20 +94,20 @@ function changeState() {
   }
 }
 
-/**/
-
 .menu-wrapper:hover .menu-bar.active {
   animation:none;
 }
+
 .active .first {
   top: 50%;
   left: 0%;
-  transform: rotate(45deg);
+  transform: rotate(45deg) translateY(3px);
 }
+
 .active .second{
   top: 50%;
   left: 0%;
-  transform: rotate(-45deg);
+  transform: rotate(-45deg) translateY(-3px);
 }
 
 </style>

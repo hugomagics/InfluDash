@@ -1,8 +1,8 @@
 <template>
-  <HomeTopDesktop class="Desktop"/>
-  <HomeTopMobile class="Mobile"/>
+  <!-- <DesktopHeaderHeader class="Desktop"/>
+  <MobileHeaderHeader class="Mobile"/> -->
 
-  <HomeDownDesktop class="Desktop"/>
+  <DesktopHomeTopDesktop class="Desktop"/>
 </template>
 
 <style scoped>

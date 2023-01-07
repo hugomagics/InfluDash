@@ -25,7 +25,10 @@
 <style scoped>
 .WebWeMade {
   display:none;
+
+  padding-top: 250px;
 }
+
 .homeTitle {
   margin-top: 50px;
   padding-left: 50px;
