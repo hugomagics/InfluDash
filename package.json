@@ -12,7 +12,8 @@
     "pug": "^3.0.2",
     "pug-plain-loader": "^1.1.0",
     "sass": "^1.56.1",
-    "sass-loader": "10"
+    "sass-loader": "10",
+    "vue-gtag-next": "^1.14.0"
   },
   "dependencies": {
     "nuxt-swiper": "^0.1.6"
